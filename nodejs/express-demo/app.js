@@ -10,7 +10,8 @@ var bodyParser = require('body-parser');
 // 加载路由控制
 var index = require('./routes/index');
 var users = require('./routes/users');
-var users = require('./routes/goods');
+var goods = require('./routes/goods');
+var db = require('./routes/db');
 
 // 创建项目实例
 var app = express();
@@ -30,7 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));  		// 定义静态文�
 // 匹配路径和路由
 app.use('/', index);
 app.use('/users', users);
-app.use('/goods', users);
+app.use('/goods', goods);
+app.use('/db', db);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
