@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "hahaha",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g", "01test.cpp"
+            ]
+        }
+    ]
+}

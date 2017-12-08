@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{5D3C2283-E608-4C8D-95B3-F88E3B491825}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ctest/jstest.js">
+    <Files>
+      <File FileName="ctest/jstest.js" Line="3" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ctest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
