@@ -1,0 +1,78 @@
+
+
+mobile	15102787477
+
+	"now_at": 1515232622,
+	"sid": "83s4aa4fe58dbd595598d349eda7918d036c0",
+	"im_password": "fe9fc289c3ff0af142b6d3bead98a923",
+
+
+	"error_code": 0,
+	"error_reason": "创建成功",
+	"error_url": "",
+	"now_at": 1515232623,
+	"id": 83,
+	"im_password": "fe9fc289c3ff0af142b6d3bead98a923"
+
+
+	"constellation": "摩羯",
+	"im_password": "fe9fc289c3ff0af142b6d3bead98a923"
+
+
+
+        //调用环信登录接口
+        if( !EMClient.getInstance().isLoggedInBefore() ){
+            HXHelper.getInstance().loginHX("" + userDetailP.getId(), userDetailP.getIm_password(), new HomeActivity.HXEMCallBack());
+        }
+
+    @Override
+    protected void onDestroy() {
+        HXHelper.getInstance().logout(false,null);
+        super.onDestroy();
+    }
+
+
+01-10 11:38:00.342 3566-5660/? E/octvm_drv: common drv: platform_autosave_handle -> not implemented
+01-10 11:38:02.484 28270-28270/? E/AndroidRuntime: FATAL EXCEPTION: main
+                                                   Process: com.example.liujinxian.yuewangame, PID: 28270
+                                                   java.lang.RuntimeException: Unable to destroy activity {com.example.liujinxian.yuewangame/com.liujinxian.yuewangame.ChatRoomActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int io.agora.rtc.RtcEngine.leaveChannel()' on a null object reference
+                                                       at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3674)
+                                                       at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3692)
+                                                       at android.app.ActivityThread.access$1400(ActivityThread.java:147)
+                                                       at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1337)
+                                                       at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                       at android.os.Looper.loop(Looper.java:135)
+                                                       at android.app.ActivityThread.main(ActivityThread.java:5235)
+                                                       at java.lang.reflect.Method.invoke(Native Method)
+                                                       at java.lang.reflect.Method.invoke(Method.java:372)
+                                                       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+                                                       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+                                                    Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int io.agora.rtc.RtcEngine.leaveChannel()' on a null object reference
+                                                       at com.io.agoralib.AgoraHelper.leaveLiveChannel(AgoraHelper.java:110)
+                                                       at com.liujinxian.yuewangame.ChatRoomActivity.onDestroy(ChatRoomActivity.java:653)
+                                                       at android.app.Activity.performDestroy(Activity.java:6118)
+                                                       at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1140)
+                                                       at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3661)
+                                                       at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3692) 
+                                                       at android.app.ActivityThread.access$1400(ActivityThread.java:147) 
+                                                       at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1337) 
+                                                       at android.os.Handler.dispatchMessage(Handler.java:102) 
+                                                       at android.os.Looper.loop(Looper.java:135) 
+                                                       at android.app.ActivityThread.main(ActivityThread.java:5235) 
+                                                       at java.lang.reflect.Method.invoke(Native Method) 
+                                                       at java.lang.reflect.Method.invoke(Method.java:372) 
+                                                       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906) 
+                                                       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701) 
+01-10 11:38:02.494 1168-2189/? E/ActivityManager: Invalid thumbnail dimensions: 0x0
+01-10 11:38:03.345 3566-5660/? E/octvm_drv: common drv: platform_autosave_handle -> not implemented
+01-10 11:38:04.516 1168-2076/? E/LocSvc_ApiV02: E/virtual loc_api_adapter_err LocApiV02::getBestAvailableZppFix(GpsLocation&, LocPosTechMask&):2986]: error! status = eLOC_CLIENT_SUCCESS, zpp_ind.status = eQMI_LOC_UNSUPPORTED_V02
+01-10 11:38:06.188 295-1100/? E/DnsProxyListener: block dns query from uid = 11811
+01-10 11:38:06.188 295-1100/? E/DnsProxyListener: block dns query from uid = 11811
+01-10 11:38:06.338 3566-5660/? E/octvm_drv: common drv: platform_autosave_handle -> not implemented
+01-10 11:38:09.351 3566-5660/? E/octvm_drv: common drv: platform_autosave_handle -> not implemented
+01-10 11:38:09.551 1168-1602/? E/InputDispatcher: channel '2211bb51 com.example.liujinxian.yuewangame/com.liujinxian.yuewangame.HomeActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+01-10 11:38:09.561 1168-1602/? E/InputDispatcher: channel '34769a com.example.liujinxian.yuewangame/com.liujinxian.yuewangame.ChatRoomActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+01-10 11:38:09.681 1168-1637/? E/WifiStateMachine: WifiStateMachine CMD_START_SCAN source 10108 txSuccessRate=8.22 rxSuccessRate=9.32 targetRoamBSSID=any RSSI=-63
+01-10 11:38:10.612 3566-4514/? E/octvm_klo: Not get wanted event from the watchset in 8000ms for 2
+01-10 11:38:10.662 1168-2076/? E/LocSvc_LBSApiV02: E/virtual int lbs_core::LBSApiV02::injectCoarsePosition(const CoarsePositionInfo&):312]: Error : st = 0, ind.status = 1
+01-10 11:38:10.672 1168-1168/? E/JavaBinder: !!! FAILED BINDER TRANSACTION !!!
