@@ -1,3 +1,0 @@
-myNameAndAge
-
-and = 'asdfsdfa'
