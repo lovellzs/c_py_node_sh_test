@@ -16,6 +16,9 @@ print "本地时间为 :", localtime
 localtime = time.asctime( time.localtime(time.time()) )
 print "本地时间为 :", localtime
 
+localtime = 1390666206
+print "本地时间为 === :", time.asctime( time.localtime(localtime) )
+
 
 # 格式化成2016-03-20 11:45:39形式
 print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) 

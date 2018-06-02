@@ -6,6 +6,10 @@ from email.mime.text import MIMEText
 from email.header import Header
 
 # 第三方 SMTP 服务
+# mail_host = "smtp.qq.com"  # 设置服务器
+# mail_user = "67287172"  # 用户名
+# mail_pass = "sz07147766345"  # 口令
+#
 mail_host = "smtp.qq.com"  # 设置服务器
 mail_user = "67287172"  # 用户名
 mail_pass = "sz07147766345"  # 口令

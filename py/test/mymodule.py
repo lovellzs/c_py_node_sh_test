@@ -9,3 +9,6 @@ def print_name( name ):
    return
 
 
+from stratum import version
+
+print version.VERSION

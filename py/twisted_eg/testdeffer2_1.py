@@ -25,6 +25,7 @@ def getRemoteData():
     reactor.callInThread(loadRemoteData, d1.callback)
     print "===r1===="
     r1 = yield d1
+    # defer.returnValue(r1)
     print "===r1====" , r1
 
     d2 = defer.Deferred()
@@ -33,7 +34,7 @@ def getRemoteData():
     r2 = yield d2
     print "===r2====", r2
 
-    defer.returnValue(r1 + r2)
+    defer.returnValue(r2)
 
 
 def getResult(v):

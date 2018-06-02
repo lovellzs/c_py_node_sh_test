@@ -16,14 +16,14 @@ def loadRemoteData(callback, errback, url):
     # 或 errback(...)
 
     time.sleep(3)
-    # callback(url)
-    errback( Exception("Invalid level! 1111") )
+    callback(url)
+    # errback( Exception("Invalid level! 1111") )
 
 
 
 def getRemoteData():
     d = defer.Deferred()
-    reactor.callInThread(loadRemoteData, d.callback, d.errback, "http://www.baidu.com")
+    reactor.callInThread(loadRemoteData, d.callback, d.errback)
     return d
 
 

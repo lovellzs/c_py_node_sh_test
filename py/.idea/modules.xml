@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../bitproject/block-explorer/bitcoin-abe/.idea/bitcoin-abe.iml" filepath="$PROJECT_DIR$/../../bitproject/block-explorer/bitcoin-abe/.idea/bitcoin-abe.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/py.iml" filepath="$PROJECT_DIR$/.idea/py.iml" />
       <module fileurl="file://$PROJECT_DIR$/../twisted-intro/.idea/twisted-intro.iml" filepath="$PROJECT_DIR$/../twisted-intro/.idea/twisted-intro.iml" />
     </modules>
