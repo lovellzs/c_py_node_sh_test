@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/first.dir/main.cpp.o CMakeFiles/first.dir/myconst/pre.cpp.o CMakeFiles/first.dir/test1/func.cpp.o CMakeFiles/first.dir/test1/func1.cpp.o  -o first 

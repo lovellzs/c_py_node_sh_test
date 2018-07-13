@@ -11,8 +11,9 @@
         <div id="login">
             <div>
                 <input id="serverIP" type="text" placeholder="服务器IP" value="127.0.0.1" autofocus="autofocus" />
-                <input id="serverPort" type="text" placeholder="服务器端口" value="10000" />
-                <input id="btnConnect" type="button" value="连接" onclick="connect()" />
+                <input id="serverPort" type="text" placeholder="服务器端口" value="7777" />
+                <input id="btnConnect" type="button" value="连接" onclick="connect()" />&nbsp;&nbsp;
+                <input id="btndisConnect" type="button" value="断开连接" onclick="disconnect()" />
             </div>
             <div>
                 <input id="sendText" type="text" placeholder="发送文本" value="I'm WebSocket Client!" />
@@ -60,13 +61,18 @@
             socket.send(msg);
         }
 
-        window.onbeforeunload = function () {
-            try {
+        function disconnect() {
+             try {
                 socket.close();
                 socket = null;
             }
             catch (ex) {
+                 console.log(ex.message);
             }
+        }
+        
+        window.onbeforeunload = function () {
+            disconnect();
         };
 
         function $(id) { return document.getElementById(id); }

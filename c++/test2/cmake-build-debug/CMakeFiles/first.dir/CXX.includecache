@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/apple/projects/c_py_node_sh_test/c++/test2/main.cpp
+iostream
+-
+myconst/pre.cpp
+/Users/apple/projects/c_py_node_sh_test/c++/test2/myconst/pre.cpp
+test1/func1.h
+/Users/apple/projects/c_py_node_sh_test/c++/test2/test1/func1.h
+test1/func.h
+/Users/apple/projects/c_py_node_sh_test/c++/test2/test1/func.h
+
+/Users/apple/projects/c_py_node_sh_test/c++/test2/myconst/pre.cpp
+
+/Users/apple/projects/c_py_node_sh_test/c++/test2/test1/func.cpp
+func1.h
+/Users/apple/projects/c_py_node_sh_test/c++/test2/test1/func1.h
+
+/Users/apple/projects/c_py_node_sh_test/c++/test2/test1/func.h
+
+/Users/apple/projects/c_py_node_sh_test/c++/test2/test1/func1.cpp
+func1.h
+/Users/apple/projects/c_py_node_sh_test/c++/test2/test1/func1.h
+
+/Users/apple/projects/c_py_node_sh_test/c++/test2/test1/func1.h
+
